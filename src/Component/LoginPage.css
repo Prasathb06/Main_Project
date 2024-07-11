@@ -1,0 +1,77 @@
+.log {
+  background-image: url("../images/Backgroundimg/full-stack-developer-freelance-projects.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 590px;
+  width: auto;
+}
+
+.form1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  backdrop-filter: blur(1rem);
+  border: 1px solid;
+  width: 400px;
+  border: none;
+  height: 450px;
+  border-radius: 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: 10px;
+  box-shadow: 5px 5px 2px black;
+}
+
+.btn-1 {
+  text-align: center;
+  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  border-style: none;
+  background-color: blue;
+  color: white; 
+  margin-bottom: 60px !important;
+  font-size:20px !important;
+}
+
+.user1 {
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  border-style: none;
+  padding-left: 20px;
+}
+
+.pass1 {
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  border-style: none;
+  padding-left: 20px;
+}
+
+.header{
+  text-align: center;
+  color: #7DFC00 !important;
+  padding-bottom: 40px;
+ 
+}
+
+.reg{
+  margin-top: 0px !important;
+  font-size: larger;
+  margin-bottom: 100%;
+}
+
+@media screen and (max-width:320px){
+.form1{
+  width: 300px;
+} 
+.reg{
+
+  font-size: 20px;
+}
+}
