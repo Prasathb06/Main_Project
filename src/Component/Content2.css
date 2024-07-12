@@ -1,7 +1,7 @@
 .box {
     border: 1px solid black;
     border-radius: 20px;
-    background-color: rgb(35, 134, 35);
+    background-color: #1A1F1B;
     height: 300px;
 }
 
@@ -10,13 +10,13 @@
     column-gap: 10px;
     justify-items: center;
     align-items: center;
-    margin-top: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .card1 {
     background: transparent;
     border: none;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     border-radius: 0%;
     color: white;
     padding-top: 10px;
@@ -29,7 +29,7 @@
 .card2 {
     background: transparent;
     border: none;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     border-radius: 0%;
     color: white;
     padding-top: 10px;
@@ -38,7 +38,7 @@
 .card3 {
     background: transparent;
     border: none;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     border-radius: 0%;
     color: white;
     padding-top: 10px;
@@ -49,6 +49,16 @@
     border: none;
     color: white;
     padding-top: 10px;
+}
+
+.title{
+    color: #7DFC00;
+}
+
+.why{
+    margin-left: 90px;
+    font-size: xx-large;
+    margin-bottom: 20px;
 }
 
 .Price{

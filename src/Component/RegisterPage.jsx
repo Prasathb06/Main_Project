@@ -17,7 +17,7 @@ const RegisterPage = () => {
   
     fetch("http://localhost:4000/user/register",{
       method:"POST",
-      headers:{
+      headers:{    
         "Accept":"application /json",
         "Content-Type":"application/json"
       },

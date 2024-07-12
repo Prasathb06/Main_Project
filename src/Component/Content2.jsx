@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { MdAccessTime } from "react-icons/md";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
+import { GiThink } from "react-icons/gi";
 import "./Content2.css";
 
 const Content2 = () => {
@@ -16,7 +17,8 @@ const Content2 = () => {
                     <Col className='cards'>
                         <Card style={{ width: '18rem' }} className='card1'>
                             <Card.Body>
-                                <Card.Title className=' pb-4'>Why Choose Us</Card.Title>
+                            <GiThink className='why'/>
+                                <Card.Title className='title pb-4'>Why Choose Us</Card.Title>
                                 <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle>
                                 <Card.Text className='font'>
                                     Choose us for unparalleled IT training. Benefit from expert-led courses, hands-on experience, and personalized learning to propel your career forward.
@@ -28,7 +30,7 @@ const Content2 = () => {
                         <Card style={{ width: '18rem' }} className='card2'>
                             <Card.Body>
                             <MdAccessTime className='Time'/>
-                                <Card.Title className='pb-4'>Save Your Time</Card.Title>
+                                <Card.Title className='title pb-4'>Save Your Time</Card.Title>
                                 <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle>
                                 <Card.Text>
                                 Access expert-led instruction, flexible schedules, and a virtual classroom for immersive tech education.
@@ -40,7 +42,7 @@ const Content2 = () => {
                         <Card style={{ width: '18rem' }} className='card3'>
                             <Card.Body>
                             <FaHandHoldingUsd className='Price'/>
-                                <Card.Title className='pb-4'>Affordable Price For You</Card.Title>
+                                <Card.Title className='title pb-4'>Affordable Price For You</Card.Title>
                                 <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle>
                                 <Card.Text>
                                 Our institute offers quality training at an affordable price, ensuring accessible knowledge for all.                                </Card.Text>
@@ -51,7 +53,7 @@ const Content2 = () => {
                         <Card style={{ width: '18rem' }} className='card4'>
                             <Card.Body>
                             <LiaChalkboardTeacherSolid  className='Training'/>
-                                <Card.Title className='pb-4'>Practical Training</Card.Title>
+                                <Card.Title className='title pb-4'>Practical Training</Card.Title>
                                 <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle>
                                 <Card.Text>
                                 Gain hands-on experience, real-world skills, and industry-relevant knowledge for immediate professional application.                                </Card.Text>
