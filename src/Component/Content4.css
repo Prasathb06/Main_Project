@@ -1,23 +1,22 @@
-.slide {
-    transform: scale(0.5);
-    transition: transform 300ms;
-    opacity: 0.2;
-  }
-  .activeSlide {
-    transform: scale(1.5);
-    transition: transform 300ms;  
-    opacity: 1;
-  }
+h2 {
+  text-align: center;
+}
 
-  .slider{
-    height: 90px !important;
-    width: 90%; 
-    margin-bottom: 100px;
-  }
+.mainContainer {
+  width: 90%;
+  margin-left: 70px;
+}
 
-  @media screen and (max-width:425px) {
+.mainContainer .Container {
+  padding: 20px 0;
+}
 
-    .slider{
-        
-    }
-  }
+.mainContainer .Container img {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
