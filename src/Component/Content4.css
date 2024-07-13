@@ -1,0 +1,23 @@
+.slide {
+    transform: scale(0.5);
+    transition: transform 300ms;
+    opacity: 0.2;
+  }
+  .activeSlide {
+    transform: scale(1.5);
+    transition: transform 300ms;  
+    opacity: 1;
+  }
+
+  .slider{
+    height: 90px !important;
+    width: 90%; 
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width:425px) {
+
+    .slider{
+        
+    }
+  }
