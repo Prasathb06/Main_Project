@@ -20,3 +20,8 @@ h2 {
   text-align: center;
 }
 
+@media screen and (max-width:425px) {
+  .mainContainer{
+    margin-left: 5%;
+  }
+}
