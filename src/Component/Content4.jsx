@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import img1 from "../images/Logo/TCS.webp";
 import img2 from "../images/Logo/HCL.png";
-import img3 from "../images/Logo/WIPRO.webp";
+import img3 from "../images/Logo/WIPRO.png";
 import img4 from "../images/Logo/ZOHO1.webp";
-import img5 from "../images/Logo/Amazon.webp";
-import img6 from "../images/Logo/Accenture.webp";
+import img5 from "../images/Logo/Amazon.png";
+import img6 from "../images/Logo/Accenture.png";
 
 class Content4 extends Component{
   render(){
@@ -59,10 +59,10 @@ class Content4 extends Component{
             <img src={img4}/>
           </div>
           <div className='Container'>
-            <img src={img5}/>
+            <img src={img5} style={{height:"100px", marginTop:"40px"}}/>
           </div>
           <div className='Container'>
-            <img src={img6}/>
+            <img src={img6} style={{height:"100px", marginTop:"40px"}}/>
           </div>
         </Slider>
       </div>

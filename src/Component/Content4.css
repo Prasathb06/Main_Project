@@ -1,5 +1,7 @@
 h2 {
   text-align: center;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .mainContainer {
@@ -12,7 +14,9 @@ h2 {
 }
 
 .mainContainer .Container img {
-  height: 90px;
+  height: 200px;
+  width: 200px;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
