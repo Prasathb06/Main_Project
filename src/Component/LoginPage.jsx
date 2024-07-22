@@ -20,7 +20,7 @@ const LoginPage = () => {
     })
     .then(res => res.json())
     .then((data)=>{
-      if(data.userFound){
+      if(!data){
         alert("Login Successfully")
       }else{
         alert("Login Failed")
@@ -34,7 +34,7 @@ const LoginPage = () => {
       <h1 className='header'>Login</h1>
         <input className='user1' type='text' name='username' placeholder='username'></input><br></br>
         <input  className='pass1' type='password' name='password' placeholder='password'></input><br></br>
-        <input className='btn-1' type='submit' value='submit'></input>
+        <input className='btn-1' type='submit' value='Login'></input>
         <p className=" reg text-white">Don't have an account?<a href="./register"><b>Register</b></a></p>
       </form>
     </div>

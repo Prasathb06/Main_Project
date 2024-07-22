@@ -26,7 +26,11 @@ const RegisterPage = () => {
 
     .then(res => res.json())
     .then((data)=>{
-      console.log(data);
+      if (!data) {
+        console.log("Register Failed");
+      }else{
+        console.log("Register Successfully");
+      }
     }) 
 }
   return (
