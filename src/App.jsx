@@ -12,6 +12,7 @@ import Home from './Component/Home';
 import HideNavbar from './Component/HideNavbar';
 import Login from './AdminPanel/Login';
 import Footer from './Component/Footer'
+import AdminController from './AdminPanel/AdminController';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     </HideNavbar>
     <Routes>
       <Route path='/' element={<Home></Home>}/>
+      <Route path='/AdminCon' element={<AdminController></AdminController>}/>
       <Route path='/Admin' element={<Login></Login>}/>
       <Route path="/login" element={<LoginPage></LoginPage>}/>
       <Route path='/register' element={<RegisterPage></RegisterPage>}/>

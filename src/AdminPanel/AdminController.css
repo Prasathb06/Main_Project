@@ -1,0 +1,27 @@
+.productform{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 30px;
+}
+.product{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    backdrop-filter: blur(1rem);
+    border: 1px solid white;
+    border: 1px solid;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    box-shadow: 5px 5px 2px black;
+}
+.pname{
+    column-gap: 10px !important;
+}
+.pimage{
+    
+}
