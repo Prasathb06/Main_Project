@@ -11,10 +11,10 @@ const Footer = () => {
     <>
       <section className="footer">
       <div className="social">
-      <Nav.Link className='fm' href=""><FaInstagram /></Nav.Link>
-      <Nav.Link className='fm' href=""><FaFacebook /></Nav.Link>
-      <Nav.Link className='fm' href=""><FaYoutube /></Nav.Link>
-      <Nav.Link className='fm' href=""><FaTwitter /></Nav.Link>
+      <Nav.Link className='icon1' href=""><FaInstagram /></Nav.Link>
+      <Nav.Link className='icon2' href=""><FaFacebook /></Nav.Link>
+      <Nav.Link className='icon3' href=""><FaYoutube /></Nav.Link>
+      <Nav.Link className='icon4' href=""><FaTwitter /></Nav.Link>
       </div>
       <ul className="details">
         <li><a className="fm" href="">Home</a></li>

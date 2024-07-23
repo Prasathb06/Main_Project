@@ -5,11 +5,189 @@
 }
 
 .social {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.icon1{
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position :relative;
+    border-radius: 20px;
+}
+
+.icon1:hover{
+    scale: 1.2;
+    color: white;
+  
+}
+
+.icon1:before{
+    background-color: #EC2B88;
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    left: -110%;
+    top: 80%;
+    transform: rotate(45deg);
+    z-index: -1000;
+}
+.icon1:hover:before{
+    animation: slide 0.7s forwards;
+    
+}
+@keyframes slide {
+    50%{
+        left: 10%;
+        top: -40%;
+    }
+    100%{
+        left: -15%;
+        top: -15%;
+    }
+}
+
+.icon2{
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position :relative;
+    border-radius: 20px;
+}
+
+.icon2:hover{
+    scale: 1.2;
+    color: white;
+  
+}
+
+.icon2:before{
+    background-color: #0F8DEB;
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    left: -110%;
+    top: 80%;
+    transform: rotate(45deg);
+    z-index: -1000;
+}
+.icon2:hover:before{
+    animation: slide 0.7s forwards;
+    
+}
+@keyframes slide {
+    50%{
+        left: 10%;
+        top: -40%;
+    }
+    100%{
+        left: -15%;
+        top: -15%;
+    }
+}
+
+.icon3{
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position :relative;
+    border-radius: 20px;
+}
+
+.icon3:hover{
+    scale: 1.2;
+    color: white;
+  
+}
+
+.icon3:before{
+    background-color: red;
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    left: -110%;
+    top: 80%;
+    transform: rotate(45deg);
+    z-index: -1000;
+}
+.icon3:hover:before{
+    animation: slide 0.7s forwards;
+    
+}
+@keyframes slide {
+    50%{
+        left: 10%;
+        top: -40%;
+    }
+    100%{
+        left: -15%;
+        top: -15%;
+    }
+}
+
+.icon4{
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position :relative;
+    border-radius: 20px;
+}
+
+.icon4:hover{
+    scale: 1.2;
+    color: white;
+  
+}
+
+.icon4:before{
+    background-color: #0F8DEB;
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    left: -110%;
+    top: 80%;
+    transform: rotate(45deg);
+    z-index: -1000;
+}
+.icon4:hover:before{
+    animation: slide 0.7s forwards;
+    
+}
+@keyframes slide {
+    50%{
+        left: 10%;
+        top: -40%;
+    }
+    100%{
+        left: -15%;
+        top: -15%;
+    }
+}
 .social .fm {
     font-size: 20px;
     display: inline-block;
