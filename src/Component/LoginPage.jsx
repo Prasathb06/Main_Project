@@ -20,7 +20,7 @@ const LoginPage = () => {
     })
     .then(res => res.json())
     .then((data)=>{
-      if(!data){
+      if(data.userFound){
         alert("Login Successfully")
       }else{
         alert("Login Failed")
