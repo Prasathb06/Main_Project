@@ -1,48 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './RegisterPage.css';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 // import { Link } from 'react-router-dom';
 
 const RegisterPage = () => {
-  const navigate = useNavigate();
+
+  const [username, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState("");
+  const [password, setPassword] = useState("");
+  const nav = useNavigate();
+
   const registerUser=(e)=>{
     e.preventDefault()
-  const User ={
-    username:e.target.username.value,
-    email:e.target.email.value,
-    contact:e.target.contact.value,
-    password:e.target.password.value
-  }
-  
-  
-    fetch("http://localhost:4000/user/register",{
-      method:"POST",
-      headers:{    
-        "Accept":"application /json",
-        "Content-Type":"application/json"
-      },
-      body:JSON.stringify(User)
-    })
-
-    .then(res => res.json())
-    .then((data)=>{
-      if (!data) {
-        console.log("Register Failed");
-      }else{
-        console.log("Register Successfully");
+    if(formType === "register"){
+      let newErrors ={};
+      if(!username){
+        newErrors.username = "Username is required";
       }
-    }) 
+      if(!email){
+        newErrors.email = "Email is required";
+      }
+      if(!contact){
+        newErrors.contact = "contact is required";
+      }
+      if(!password){
+        newErrors.password = "Password is required";
+      }
+      setErrors(newErrors);
+    }
+    axios.post("http://localhost:4000/user/register", {username, email, contact, password})
+    .then(result =>{
+      if(result.status === 201){
+        alert("register successfully")
+        nav("/login");
+      }
+    })
+    .catch(err => {
+      if(err.response && err.response.status === 400){
+        window.alert("email already exists")
+      }else{
+        console.log(err);
+      }
+    })
+     
 }
   return (
     <>
       <div className='register'>
-      <form  className='form' action='' method='post' onSubmit={(e)=>{registerUser(e)}}>
+      <form  className='form'  action='' method='post' onSubmit={registerUser}>
         <h1 className='headerR'>RegisterPage</h1>
-      <input className='name' type='text' name='username' placeholder='userame'></input><br></br>
-      <input className='email' type='text' name='email' placeholder='email'></input><br></br>
-      <input className='contact' type='text' name='contact' placeholder='contact'></input><br></br>
-      <input className='pass' type='password' name='password' placeholder='password'></input><br></br>
-      <input className='btnR' type='submit' value="submit" onClick={navigate("/login")}></input>
+      <input className='name' type='text' name='username' placeholder='userame' onChange={(e)=>setName(e.target.value)}></input><br></br>
+      <input className='email' type='text' name='email' placeholder='email' onChange={(e)=>setEmail(e.target.value)}></input><br></br>
+      <input className='contact' type='text' name='contact' placeholder='contact' onChange={(e)=>setContact(e.target.value)}></input><br></br>
+      <input className='pass' type='password' name='password' placeholder='password' onChange={(e)=>setPassword(e.target.value)}></input><br></br>
+      <input className='btnR' type='submit' value="submit" ></input>
       </form>
       </div>
     </>

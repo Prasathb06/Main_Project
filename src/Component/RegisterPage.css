@@ -1,80 +1,82 @@
 .register {
-    background-image: url("../images/Backgroundimg/full-stack-developer-freelance-projects.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    height: 450px;
-    width: auto;
-  }
-  
-  .form {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    backdrop-filter: blur(1rem);
-    border: 1px solid;
-    width: 400px;
-    border: none;
-    height: 380px;
-    border-radius: 20px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    row-gap: 10px;
-    box-shadow: 5px 5px 2px black;
-  }
-  
-  .btnR {
-    text-align: center;
-    border-radius: 20px;
-    width: 80px;
-    height: 25px;
-    border-style: none;
-    background-color: blue;
-    color: white;
-    margin-bottom: 75px !important;
-    font-size:15px !important;
-    
-  }
-  
-  .name {
-    width: 300px;
-    height: 25px;
-    border-radius: 30px;
-    border-style: none;
-    padding-left: 10px !important;
-  }
-  
-  .pass {
-    width: 300px;
-    height: 25px;
-    border-radius: 30px;
-    border-style: none;
-    padding-left: 10px !important;
-   
-  }
+  background-image: url("../images/Backgroundimg/full-stack-developer-freelance-projects.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 500px;
+  width: auto;
+}
 
-  .contact{
-    width: 300px;
-    height: 25px;
-    border-radius: 30px;
-    border-style: none;
-    padding-left: 10px !important;
-  }
+.form {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  backdrop-filter: blur(1rem);
+  border: 1px solid;
+  width: 400px;
+  border: none;
+  height: 460px;
+  border-radius: 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: 10px;
+  box-shadow: 5px 5px 2px black;
+}
 
-  .email{
-    width: 300px;
-    height: 25px;
-    border-radius: 30px;
-    border-style: none;
-    padding-left: 10px !important;
-  }
+.btnR {
+  text-align: center;
+  border-radius: 20px;
+  width: 80px;
+  height: 25px;
+  border-style: none;
+  background-color: blue;
+  color: white;
+  margin-bottom: 75px !important;
+  font-size: 15px !important;
 
+}
 
-  
-  .headerR {
-    text-align: center;
-    color: #7DFC00 !important;
-   
-  }
+.name {
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  border-style: none;
+  padding-left: 10px !important;
+}
+
+.pass {
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  border-style: none;
+  padding-left: 10px !important;
+
+}
+
+.contact {
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  border-style: none;
+  padding-left: 10px !important;
+}
+
+.email {
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+  border-style: none;
+  padding-left: 10px !important;
+}
+
+.headerR {
+  text-align: center;
+  color: #7DFC00 !important;
+
+}
+
+.error{
+  color: red;
+}
