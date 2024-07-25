@@ -14,22 +14,22 @@ const RegisterPage = () => {
 
   const registerUser=(e)=>{
     e.preventDefault()
-    if(formType === "register"){
-      let newErrors ={};
-      if(!username){
-        newErrors.username = "Username is required";
-      }
-      if(!email){
-        newErrors.email = "Email is required";
-      }
-      if(!contact){
-        newErrors.contact = "contact is required";
-      }
-      if(!password){
-        newErrors.password = "Password is required";
-      }
-      setErrors(newErrors);
-    }
+    // if(formType === "register"){
+    //   let newErrors ={};
+    //   if(!username){
+    //     newErrors.username = "Username is required";
+    //   }
+    //   if(!email){
+    //     newErrors.email = "Email is required";
+    //   }
+    //   if(!contact){
+    //     newErrors.contact = "contact is required";
+    //   }
+    //   if(!password){
+    //     newErrors.password = "Password is required";
+    //   }
+    //   setErrors(newErrors);
+    // }
     axios.post("http://localhost:4000/user/register", {username, email, contact, password})
     .then(result =>{
       if(result.status === 201){
