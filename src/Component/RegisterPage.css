@@ -1,82 +1,81 @@
+/* General container styles */
 .register {
   background-image: url("../images/Backgroundimg/full-stack-developer-freelance-projects.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
+  display: flex;
   justify-content: center;
-  align-content: center;
-  height: 500px;
-  width: auto;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
 }
 
 .form {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  backdrop-filter: blur(1rem);
-  border: 1px solid;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 400px;
-  border: none;
-  height: 460px;
-  border-radius: 20px;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  row-gap: 10px;
-  box-shadow: 5px 5px 2px black;
-}
-
-.btnR {
+  height: fit-content;
   text-align: center;
-  border-radius: 20px;
-  width: 80px;
-  height: 25px;
-  border-style: none;
-  background-color: blue;
-  color: white;
-  margin-bottom: 75px !important;
-  font-size: 15px !important;
-
+  
 }
 
-.name {
-  width: 300px;
-  height: 25px;
-  border-radius: 30px;
-  border-style: none;
-  padding-left: 10px !important;
-}
-
-.pass {
-  width: 300px;
-  height: 25px;
-  border-radius: 30px;
-  border-style: none;
-  padding-left: 10px !important;
-
-}
-
-.contact {
-  width: 300px;
-  height: 25px;
-  border-radius: 30px;
-  border-style: none;
-  padding-left: 10px !important;
-}
-
-.email {
-  width: 300px;
-  height: 25px;
-  border-radius: 30px;
-  border-style: none;
-  padding-left: 10px !important;
-}
-
+/* Header styles */
 .headerR {
-  text-align: center;
-  color: #7DFC00 !important;
-
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
 }
 
-.error{
+/* Input group styles */
+.input-group {
+  margin-bottom: 15px;
+}
+
+/* Input styles */
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+/* Button styles */
+.btnR {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btnR:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Error message styles */
+.form div {
+  margin-bottom: 10px;
+}
+
+.form div > div {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Error message styles */
+.input-group div {
   color: red;
+  font-size: 15px;
+  padding-top: 20px;
+  margin-top: 10px;
 }

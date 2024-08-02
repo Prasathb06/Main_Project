@@ -3,75 +3,77 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
+  display: flex;
   justify-content: center;
-  align-content: center;
-  height: 590px;
-  width: auto;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
 }
 
 .form1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  backdrop-filter: blur(1rem);
-  border: 1px solid;
-  width: 400px;
-  border: none;
-  height: 450px;
-  border-radius: 20px;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  row-gap: 10px;
-  box-shadow: 5px 5px 2px black;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
 }
+
+.header {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+
+.user1, .pass1 {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 
 .btn-1 {
-  text-align: center;
-  border-radius: 20px;
-  width: 80px;
-  height: 40px;
-  border-style: none;
-  background-color: blue;
-  color: white; 
-  margin-bottom: 60px !important;
-  font-size:20px !important;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.user1 {
-  width: 300px;
-  height: 25px;
-  border-radius: 30px;
-  border-style: none;
-  padding-left: 20px;
+.btn-1:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 
-.pass1 {
-  width: 300px;
-  height: 25px;
-  border-radius: 30px;
-  border-style: none;
-  padding-left: 20px;
+
+form div {
+  margin-bottom: 10px;
 }
 
-.header{
-  text-align: center;
-  color: #7DFC00 !important;
-  padding-bottom: 40px;
- 
+form div > div {
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
-.reg{
-  margin-top: 0px !important;
-  font-size: larger;
-  margin-bottom: 100%;
+
+.reg {
+  margin-top: 20px;
+  color: #666666;
 }
 
-@media screen and (max-width:320px){
-.form1{
-  width: 300px;
-} 
-.reg{
-
-  font-size: 20px;
+.reg a {
+  color: #4CAF50;
+  text-decoration: none;
 }
+
+.reg a:hover {
+  text-decoration: underline;
 }
