@@ -1,14 +1,14 @@
-import React from 'react'
-import ProductCreation from './ProductCreation'
-import UserList from './UserList'
-import UserEdit from './UserEdit'
+import React from 'react';
+import ProductCreation from './ProductCreation';
+import UserList from './UserList';
+// import UserEdit from './UserEdit'
 
 const AdminController = () => {
   return (
     <>
     <ProductCreation></ProductCreation>
-    {/* <UserList></UserList> */}
-    <UserEdit></UserEdit>
+    <UserList></UserList>
+    
     </>
   )
 }

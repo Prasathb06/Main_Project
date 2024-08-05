@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import axios from 'axios';
 import './UserEdit.css';
 
 const UserEdit = () => {
@@ -14,9 +13,9 @@ const UserEdit = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/user/${id}`)
-      .then(response => {
-        const user = response.data;
+    fetch(`http://localhost:4000/user/${id}`)
+      .then(response => response.json())
+      .then(user => {
         setUsername(user.username);
         setEmail(user.email);
         setContact(user.contact);
@@ -63,15 +62,27 @@ const UserEdit = () => {
     setLoading(true);
 
     try {
-      await axios.post(`http://localhost:4000/user/update/${id}`, {
-        username, email, contact, password
+      const response = await fetch(`http://localhost:4000/user/update/${id}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username, email, contact, password })
       });
+
+      const data = await response.json();
       setLoading(false);
-      navigate("/");
+
+      if (response.ok) {
+        navigate("/");
+      } else {
+        setErrors({ update: "Failed to update user" });
+        console.error("There was an error updating the user!", data);
+      }
     } catch (error) {
       setLoading(false);
-      console.error("There was an error updating the user!", error);
       setErrors({ update: "Failed to update user" });
+      console.error("There was an error updating the user!", error);
     }
   };
 
@@ -79,27 +90,12 @@ const UserEdit = () => {
     <div className="update">
       <form className='form' onSubmit={handleUpdate}>
         <h1 className='header'>Update User</h1>
-        <input type="hidden" name="id" value={id} />
         <div className='input-group'>
-          <input
-            className='input'
-            type='text'
-            name='username'
-            placeholder='Username'
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          /><br />
+          <input className='input' type='text' name='username' placeholder='Username' value={username} onChange={(e) => setUsername(e.target.value)} /><br />
           {errors.username && <div style={{ color: "red" }}>{errors.username}</div>}
         </div>
         <div className='input-group'>
-          <input
-            className='input'
-            type='text'
-            name='email'
-            placeholder='Email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          /><br />
+          <input className='input' type='text' name='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} /><br />
           {errors.email && <div style={{ color: "red" }}>{errors.email}</div>}
         </div>
         <div className='input-group'>

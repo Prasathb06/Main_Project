@@ -23,7 +23,7 @@ function Navbar1() {
           >
             <div className='nav1'></div>
             <div className=''><Link to="/" className='nav-link  Home'>Home</Link></div>
-            <Nav.Link className='Link1' href="#action2">Link</Nav.Link>
+            <Nav.Link  className='Link1' href="">Courses</Nav.Link>
             {/* <NavDropdown className='Link2' title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -37,12 +37,12 @@ function Navbar1() {
             <Nav.Link className='Link3' href="#action2">Link</Nav.Link>
             <Dropdown>
               <Dropdown.Toggle className="Link2" variant="success" id="dropdown-basic">
-                Link
+                 Tutorials
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                <Dropdown.Item href="HC">HTML&CSS</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Java</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Python</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>

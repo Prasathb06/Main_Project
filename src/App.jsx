@@ -14,6 +14,10 @@ import Login from './AdminPanel/Login';
 import Footer from './Component/Footer'
 import AdminController from './AdminPanel/AdminController';
 import UserEdit from './AdminPanel/UserEdit';
+import HTMLandCSS from './Component/HTMLandCSS';
+import Java from './Component/Java';
+// import Tutorials from './Component/Tutorials';
+
 
 
 function App() {
@@ -25,8 +29,11 @@ function App() {
     <Routes>
       <Route path='/' element={<Home></Home>}/>
       <Route path='/AdminCon' element={<AdminController></AdminController>}/>
-      {/* <Route path='/userEdit' element={<UserEdit></UserEdit>}/> */}
+      {/* <Route path='/tutorial' element={<Tutorials></Tutorials>}/> */}
+      <Route path='/HC' element={<HTMLandCSS></HTMLandCSS>}/>
+      <Route path='java' element={<Java></Java>}/>
       <Route path='/Admin' element={<Login></Login>}/>
+      <Route path='/Uedit' element={<UserEdit></UserEdit>}/>
       <Route path="/login" element={<LoginPage></LoginPage>}/>
       <Route path='/register' element={<RegisterPage></RegisterPage>}/>
     </Routes>

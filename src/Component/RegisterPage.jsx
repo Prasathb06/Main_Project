@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const RegisterPage = () => {
-  const [username, setUsername] = useState("");
+  const [username, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState({});
-  const navigate = useNavigate();
+  const nav = useNavigate();
 
   const validateEmail = (email) => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.)+[^<>()[\]\\.,;:\s@"]{2,})$/i;
@@ -56,14 +56,14 @@ const RegisterPage = () => {
       .then(result => {
         if (result.status === 201) {
           alert("Registered successfully");
-          navigate("/login");
+          nav("/login");
         }
       })
       .catch(err => {
         if (err.response && err.response.status === 400) {
           window.alert("Email already exists");
         } else {
-          console.error("There was an error registering the user!", err);
+          console.log(err);
         }
       });
   };
@@ -77,57 +77,57 @@ const RegisterPage = () => {
             className='name'
             type='text'
             name='username'
-            placeholder='Username'
+            placeholder='username'
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
           /><br />
-          {errors.username && <div style={{ color: "red" }}>{errors.username}</div>}
+          {errors.username && <div style={{color: "red"}}>{errors.username}</div>}
         </div>
         <div className='input-group'>
           <input
             className='email'
             type='text'
             name='email'
-            placeholder='Email'
+            placeholder='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           /><br />
-          {errors.email && <div style={{ color: "red" }}>{errors.email}</div>}
+          {errors.email && <div style={{color: "red"}}>{errors.email}</div>}
         </div>
         <div className='input-group'>
           <input
             className='contact'
             type='text'
             name='contact'
-            placeholder='Contact'
+            placeholder='contact'
             value={contact}
             onChange={(e) => setContact(e.target.value)}
           /><br />
-          {errors.contact && <div style={{ color: "red" }}>{errors.contact}</div>}
+          {errors.contact && <div style={{color: "red"}}>{errors.contact}</div>}
         </div>
         <div className='input-group'>
           <input
             className='pass'
             type='password'
             name='password'
-            placeholder='Password'
+            placeholder='password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           /><br />
-          {errors.password && <div style={{ color: "red" }}>{errors.password}</div>}
+          {errors.password && <div style={{color: "red"}}>{errors.password}</div>}
         </div>
         <div className='input-group'>
           <input
             className='pass'
             type='password'
             name='confirmPassword'
-            placeholder='Confirm Password'
+            placeholder='confirm password'
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           /><br />
-          {errors.confirmPassword && <div style={{ color: "red" }}>{errors.confirmPassword}</div>}
+          {errors.confirmPassword && <div style={{color: "red"}}>{errors.confirmPassword}</div>}
         </div>
-        <input className='btnR' type='submit' value="Submit" />
+        <input className='btnR' type='submit' value="submit"/>
       </form>
     </div>
   );
