@@ -10,7 +10,7 @@ const CnavBar = () => {
           <Nav.Link eventKey="" href='HC'>HTML & CSS</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-2" href=''>JavaScript</Nav.Link>
+          <Nav.Link eventKey="link-2" href='javascript'>JavaScript</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-3" href='java'>Java</Nav.Link>

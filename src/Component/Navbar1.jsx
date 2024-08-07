@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FaSearch } from "react-icons/fa";
 import './Navbar1.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar1() {
   return (
@@ -23,7 +23,7 @@ function Navbar1() {
           >
             <div className='nav1'></div>
             <div className=''><Link to="/" className='nav-link  Home'>Home</Link></div>
-            <Nav.Link  className='Link1' href="">Courses</Nav.Link>
+            <Nav.Link  className='Link1' href="card">Courses</Nav.Link>
             {/* <NavDropdown className='Link2' title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -34,15 +34,15 @@ function Navbar1() {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown> */}
-            <Nav.Link className='Link3' href="#action2">Link</Nav.Link>
+            {/* <Nav.Link className='Link3' href="#action2">Link</Nav.Link> */}
             <Dropdown>
               <Dropdown.Toggle className="Link2" variant="success" id="dropdown-basic">
                  Tutorials
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item href="HC">HTML&CSS</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Java</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Python</Dropdown.Item>
+                <Dropdown.Item href="java">Java</Dropdown.Item>
+                <Dropdown.Item href="javascript">JavaScript</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>
@@ -59,6 +59,7 @@ function Navbar1() {
             <div className=''><Link to="register" className='nav-link Register'>Register</Link></div>
             {/* <Nav.Link className='Register' href="./register">Register Now</Nav.Link> */}
             <FaSearch className='search' />
+           {/* <div><button className='btn-logout'>Logout</button></div>  */}
           </Form>
 
         </Navbar.Collapse>

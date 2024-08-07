@@ -149,6 +149,23 @@
     /* transform: scale(1.1); */
 }
 
+/* .btn-logout {
+    color: white !important;
+    padding-right: 5%;
+    border: none;
+    background-color: black;
+  }
+  
+  .btn-logout:hover {
+    color: red!important;
+    border-radius: 20px;
+    transition: .2s;
+    opacity: 10;
+    display: block;
+    border-bottom: 2px solid red !important;
+  }
+   */
+
 .Register {
     color: white !important;
     /* padding-left: 18px; */

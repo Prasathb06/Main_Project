@@ -6,15 +6,6 @@ import "./UserList.css"
 const UserList = () => {
 
     const[user, setUser]=useState(0)
-    // const deleteUser =(id)=>{
-    //     fetch("http://localhost:4000/user/delete/" + id,{
-    //         method:"Delete"
-    //     })
-    //     .then(res => res.json())
-    //     .then((data)=>{
-    //         console.log(data);
-    //     })
-    // }
 
     const deleteUser = (id) => {
       fetch(`http://localhost:4000/user/delete/${id}`, {
